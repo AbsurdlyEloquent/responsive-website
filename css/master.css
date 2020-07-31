@@ -183,7 +183,23 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100px;
-  height: 100px;
-  padding-top: 100%;
+  width: 100%;
+  height: 0;
+  padding-top: 6%;
+  left: -35%;
+  top: 157%;
+} .text-bubble {
+  position:absolute;
+  background-image: url(../assets/speech-bubble.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  font-weight: 700;
+  color: #9a4d9f;
+  padding: 1%;
+  left: 15%;
+  top: 166%;
+} .text-bubble p {
+  padding-top: 15px;
 }
