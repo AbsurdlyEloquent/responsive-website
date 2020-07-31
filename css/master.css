@@ -4,6 +4,9 @@ body {
   margin: 0px;
   max-width: 1024px;
   font-family: Montserrat;
+} .body {
+  max-width: 1024px;
+  overflow-x: hidden;
 } .top-bar {
   display: flex;
   justify-content: space-between;
@@ -159,4 +162,28 @@ body {
   margin-bottom: 0px;
 } .content {
   padding: 0px 15px;
+} .map-container {
+  display: flex;
+  justify-content: center;
+} .map {
+  background-image: url(../assets/map.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 0;
+  height: 0;
+  padding-left: 100%;
+  padding-right: 100%;
+  padding-top: 50%;
+  filter: brightness(79%);
+  overflow: hidden;
+} .map-marker {
+  position: absolute;
+  background-image: url(../assets/map-marker.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+  padding-top: 100%;
 }
