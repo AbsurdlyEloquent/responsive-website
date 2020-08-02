@@ -276,10 +276,16 @@ body {
     grid-column: 1;
     grid-row: 1;
     height: 100%;
-    margin: 10%
+    margin: 10%;
+    z-index: 2;
   } header {
     justify-content: center;
   } nav {
     display: none;
+    position: absolute;
+    justify-content: flex-start;
+  } ul {
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
