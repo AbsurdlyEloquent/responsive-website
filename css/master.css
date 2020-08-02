@@ -37,6 +37,8 @@ body {
   margin-bottom: 0px;
 } span {
   color: #9a4d9f;
+} nav {
+  grid-area: nav;
 } ul {
   display:flex;
   justify-content:flex-end;
@@ -266,11 +268,16 @@ body {
   }
 }
 @media screen and (max-width: 678px) {
-  .top-bar {
+  .fish-img {
+    width: 125%;
+    left: -15%;
+    height: 510px;
+  } .top-bar {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-      "button logo logo .";
+      "button logo logo ."
+      "ul . . .";
   } .top-bar a {
     display: block;
     grid-column: 1;
@@ -280,12 +287,37 @@ body {
     z-index: 2;
   } header {
     justify-content: center;
+  } .logo {
+    height: 35px;
+    width: 35px;
+    margin: 6%;
+  } h1 {
+    font-weight: 700;
+  } .showMenu {
+    width: 80%;
   } nav {
-    display: none;
+    display: block;
     position: absolute;
-    justify-content: flex-start;
+    width: 0;
+    transition: width .5s;
+  } .showMenu ul {
+    opacity: 1;
   } ul {
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 15% 0 15% 0;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10%;
+    opacity: 0;
+    transition: opacity .5s;
+
+  }
+}
+@media screen and (max-width: 360px) {
+  .logo {
+    display: none;
   }
 }
