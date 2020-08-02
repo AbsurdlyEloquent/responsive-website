@@ -65,12 +65,12 @@ body {
   background-image: url(../assets/fish-img.png);
   background-size: contain;
   display: inline;
-  height: 400px;
+  height: 350px;
   width: 50%;
   background-repeat: no-repeat;
   z-index: -1;
   margin: 0px;
-  bottom: 60px
+  bottom: 60px;
 } aside {
   float: right;
   margin: 0 5% 0 0;
@@ -235,7 +235,7 @@ body {
   }
   .fish-img {
     width: 100%;
-    height:510px;
+    height: 90vw;
   } aside {
     float: none;
     flex-direction: row;
@@ -271,7 +271,6 @@ body {
   .fish-img {
     width: 125%;
     left: -15%;
-    height: 510px;
   } .top-bar {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -313,7 +312,16 @@ body {
     border-radius: 10%;
     opacity: 0;
     transition: opacity .5s;
-
+  } aside {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  } .calendar {
+    transform: scale(.7);
+  } .info {
+    align-items: center;
+  } .local-name {
+    justify-content: center;
   }
 }
 @media screen and (max-width: 360px) {
