@@ -322,10 +322,18 @@ body {
     align-items: center;
   } .local-name {
     justify-content: center;
+  } .social img {
+    margin: 5px;
+  } footer p {
+    font-size: 5px;
   }
 }
 @media screen and (max-width: 360px) {
   .logo {
     display: none;
+  } footer p {
+    font-size: 5px;
+  } .social img {
+    margin: 5px;
   }
 }
