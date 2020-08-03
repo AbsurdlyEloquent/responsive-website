@@ -331,9 +331,5 @@ body {
 @media screen and (max-width: 360px) {
   .logo {
     display: none;
-  } footer p {
-    font-size: 5px;
-  } .social img {
-    margin: 5px;
   }
 }
